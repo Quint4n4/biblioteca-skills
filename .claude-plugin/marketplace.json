@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "biblioteca-emanuel",
+  "description": "Marketplace privado: el modelo de trabajo compartido entre todos los proyectos.",
+  "owner": {
+    "name": "Emanuel Real Gamboa",
+    "email": "emanuelrealgamboa@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "biblioteca-de-skills",
+      "displayName": "Biblioteca de skills y agentes",
+      "description": "Siete skills de revision falsable y cuatro agentes. Todo lo local sale del perfil del repo.",
+      "source": "./plugins/biblioteca-de-skills",
+      "category": "development",
+      "author": {
+        "name": "Emanuel Real Gamboa",
+        "email": "emanuelrealgamboa@gmail.com"
+      }
+    }
+  ]
+}
