@@ -1,4 +1,4 @@
-# Biblioteca de skills — marketplace privado
+# Biblioteca de skills — marketplace público
 
 Las siete skills de revisión y los cuatro agentes del modelo de trabajo, en un solo lugar del que
 todos los proyectos tiran.
@@ -72,16 +72,27 @@ desincrustar el `CLAUDE.md`, archivar las skills locales y generar la línea bas
 un nombre de campo: todo eso lo pide al perfil. Un repo instalado pero sin
 `.claude/PERFIL-DEL-REPO.md` no revisa mal — **no revisa**: cada punto sale `NO VERIFICABLE`.
 
-### Sobre repos privados
+### Por qué este repositorio es público, y qué lo mantiene así
 
-Este marketplace funciona mejor **público**. En privado, el refresco en segundo plano desactiva los
-credential helpers de git, así que su `git pull` no se autentica por HTTPS, falla, borra el clon y
-vuelve a clonar: los auto-updates fallan de forma intermitente por diseño. Si tiene que ser privado,
-hay que correr `gh auth setup-git`, poner
-`CLAUDE_CODE_PLUGIN_KEEP_MARKETPLACE_ON_FAILURE=1` y actualizar a mano con
-`/plugin marketplace update`. Nada de esto hace falta si el repo es público, y **el contenido de
-estas skills es genérico: no lleva nada de ningún cliente.** Mantenerlo así es lo que permite que
-siga siendo público.
+**Público desde el 2026-08-18.** En privado, el refresco en segundo plano desactiva los credential
+helpers de git: el `git pull` no se autentica por HTTPS, falla, borra el clon y vuelve a clonar. Los
+auto-updates fallan de forma intermitente por diseño, y a nadie le queda claro por qué el plugin
+"a veces" está atrasado.
+
+Ser público no es un descuido: es lo que exige la capa 1. **Una skill de esta biblioteca no puede
+nombrar un cliente, un repo, una ruta ni un campo** — todo eso vive en el perfil del repo. Si un día
+una skill no se puede publicar, el problema no es la visibilidad del repositorio: es que esa skill
+tiene dentro un hecho local que no le pertenece.
+
+> **Regla de admisión, y se verifica sola.** `1-PREPARAR-BIBLIOTECA.sh` corre un filtro por nombres
+> propios antes de cada publicación y se detiene si encuentra uno. Un nombre propio en una skill es
+> un error de diseño detectado gratis.
+
+Antecedente, para que no se repita: el primer commit de este repositorio contenía
+`ejemplos/PERFIL-PHARMASIS.md` —el perfil relleno de un sistema en producción de un cliente, con sus
+brechas P0 sin corregir—. Por eso el repositorio no se "hizo público": se borró y se recreó desde
+cero. Cambiar la visibilidad habría dejado ese commit legible para siempre. **Los ejemplos rellenos
+viven en el repo que describen, nunca aquí.**
 
 **No se pueden habilitar skills sueltas de un plugin.** Se instala completo o se desactiva completo.
 Y no importa: una skill bien escrita que no aplica **se declara `N/A` sola**, citando la clave del

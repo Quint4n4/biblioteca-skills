@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
   "name": "biblioteca-emanuel",
-  "description": "Marketplace privado: el modelo de trabajo compartido entre todos los proyectos.",
+  "description": "El modelo de trabajo compartido entre todos los proyectos: skills de revision falsable y agentes.",
   "owner": {
     "name": "Emanuel Real Gamboa",
     "email": "emanuelrealgamboa@gmail.com"
