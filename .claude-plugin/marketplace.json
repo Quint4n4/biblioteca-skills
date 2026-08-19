@@ -10,7 +10,7 @@
     {
       "name": "biblioteca-de-skills",
       "displayName": "Biblioteca de skills y agentes",
-      "description": "Siete skills de revision falsable y cuatro agentes. Todo lo local sale del perfil del repo.",
+      "description": "Skills de revision falsable y agentes de trabajo. Todo lo local sale del perfil del repo.",
       "source": "./plugins/biblioteca-de-skills",
       "category": "development",
       "author": {

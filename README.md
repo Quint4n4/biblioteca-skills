@@ -1,6 +1,6 @@
 # Biblioteca de skills — marketplace público
 
-Las siete skills de revisión y los cuatro agentes del modelo de trabajo, en un solo lugar del que
+Las skills de revisión y los agentes del modelo de trabajo, en un solo lugar del que
 todos los proyectos tiran.
 
 **Esto no es una reorganización de carpetas.** Es el arreglo de un error de diseño que ya produjo

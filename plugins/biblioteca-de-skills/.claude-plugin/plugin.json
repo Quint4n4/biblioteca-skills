@@ -1,8 +1,8 @@
 {
   "name": "biblioteca-de-skills",
   "displayName": "Biblioteca de skills y agentes",
-  "description": "Las siete skills de revision y los cuatro agentes del modelo de trabajo. Universales: todo lo local sale de .claude/PERFIL-DEL-REPO.md.",
-  "version": "1.0.0",
+  "description": "Las skills de revision y los agentes del modelo de trabajo. Universales: todo lo local sale de .claude/PERFIL-DEL-REPO.md.",
+  "version": "1.1.0",
   "author": {
     "name": "Emanuel Real Gamboa",
     "email": "emanuelrealgamboa@gmail.com"
